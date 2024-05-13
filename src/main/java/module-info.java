@@ -1,5 +1,7 @@
 module dev.mccue.jdk.httpserver.session {
-    requires jdk.httpserver;
+    requires transitive jdk.httpserver;
     requires dev.mccue.jdk.httpserver.cookies;
-    requires dev.mccue.json;
+    requires transitive dev.mccue.json;
+
+    exports dev.mccue.jdk.httpserver.session;
 }
